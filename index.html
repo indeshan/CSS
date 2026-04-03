@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My CSS Projects</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333;
+    }
+
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 800px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      border: 1px solid #eee;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      border-color: #667eea;
+    }
+
+    .project-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .project-desc {
+      font-size: 14px;
+      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      color: #888;
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My CSS Projects</h1>
+    <p class="subtitle">Small CSS Projects Collection</p>
+
+    <div class="projects">
+      
+      <!-- Project 1 -->
+      <a href="./Ferb Fletcher" class="project-card">
+        <div class="project-title">Ferb Fletcher</div>
+        <div class="project-desc">Ferb Fletcher</div>
+      </a>
+
+      <!-- Project 2 -->
+      <a href="./Tanjiro Kamado" class="project-card">
+        <div class="project-title">Tanjiro Kamado</div>
+        <div class="project-desc">Tanjiro Kamado</div>
+      </a>
+
+      <!-- Add More Projects Below -->
+
+    </div>
+
+    <footer>
+      Built with ❤️ | GitHub Pages
+    </footer>
+
+  </div>
+</body>
+</html>
